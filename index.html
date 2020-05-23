@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Morph Path Animation</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <body>
+  <svg class="filter" version="1.1">
+  <defs>
+    <filter id="gooeyness">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+			<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0   0 1 0 0 0   0 0 1 0 0  0 0 0 19 -6" result="gooeyness"></feColorMatrix>
+			<feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+	</filter>
+  </defs>
+</svg>
+
+<svg class="filter" version="1.1">
+	<defs>
+	  <filter id="gooeynessBg">
+		  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+		  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0   0 1 0 0 0   0 0 1 0 0  0 0 0 19 -9" result="gooeynessBg"></feColorMatrix>
+		  <feComposite in="SourceGraphic" in2="gooeynessBg" operator="atop" />
+		</filter>
+	</defs>
+  </svg>
+
+
+<header>
+	<div class="header-inner">
+		 
+
+	<div class="burger-bg"><div class="burger-bg-inner"></div></div>	
+	<div class="burger burger-open">
+		<div class="rect"></div>
+		<div class="rect"></div>
+		<div class="rect"></div>
+	</div>
+
+</div>
+</header>
+<div class="liquid-menu">
+	<div class="burger burger-close">
+		<div class="rect"></div>
+		<div class="rect"></div>
+		<div class="rect"></div>
+	</div>
+	<div class="first-svg">
+		<svg
+			xmlns="http://www.w3.org/2000/svg" 
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			preserveAspectRatio="none"
+			viewbox="0 0 1920 1080"
+		>
+		<defs>
+			<filter id="f1" x="0" y="0" width="200%" height="200%">
+				<feOffset result="offOut" in="SourceGraphic" dx="10" dy="10" />
+				<feColorMatrix result="matrixOut" in="offOut" type="matrix"
+				values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+				<feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+				<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+			  </filter>
+			<linearGradient id="linear-gradient">
+				<stop offset="0" stop-color="#ffffff"> </stop>
+				<stop offset="1" stop-color="#22a6b3"> </stop>
+	
+			</linearGradient>
+		</defs>
+		<path id="first" filter="url(#f1)"  d="m -231.59524,-461.67912 c 0,0 322.93738,889.91118 720,925.71429 359.94284,32.45602 591.39494,-584.88893 948.57144,-640 319.1576,-49.2449 511.4616,454.15643 834.2856,445.71428 563.8484,-14.74515 937.143,-720 937.143,-720 z"></path>
+		</svg>
+	</div>
+	<div class="second-svg">
+		<svg
+			xmlns="http://www.w3.org/2000/svg" 
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			preserveAspectRatio="none"
+			viewbox="0 0 1920 1080"
+		>
+		<defs>
+			<filter id="f2" x="0" y="0" width="200%" height="200%">
+				<feOffset result="offOut" in="SourceGraphic" dx="10" dy="10" />
+				<feColorMatrix result="matrixOut" in="offOut" type="matrix"
+				values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+				<feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+				<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+			  </filter>
+			<linearGradient id="linear-gradient2">
+				<stop offset="0" stop-color="#22a6b3"> </stop>
+				<stop offset="1" stop-color="#ffffff"> </stop>
+	
+			</linearGradient>
+		</defs>
+		<path id="second" filter="url(#f2)" d="m -231.59524,-461.67912 c 0,0 48.65167,478.48261 445.71429,514.28572 359.94284,32.45602 640.22018,-446.37284 982.85715,-331.42857 262.0148,87.89795 626.8984,1278.90087 1188.5713,1211.42853 532.557,-63.9747 822.8573,-1382.85711 822.8573,-1382.85711 z"></path>
+		</svg>
+	</div>
+	<div class="third-svg">
+		<svg
+			xmlns="http://www.w3.org/2000/svg" 
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			preserveAspectRatio="none"
+			viewbox="0 0 1920 1080"
+		>
+		<defs>
+			<filter id="f3" x="0" y="0" width="200%" height="200%">
+				<feOffset result="offOut" in="SourceGraphic" dx="10" dy="10" />
+				<feColorMatrix result="matrixOut" in="offOut" type="matrix"
+				values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+				<feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+				<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+			  </filter>
+			<linearGradient id="linear-gradient3">
+				<stop offset="0" stop-color="#22a6b3"> </stop>
+				<stop offset="1" stop-color="#ffffff"> </stop>		
+			</linearGradient>
+		</defs>
+		<path id="third" filter="url(#f2)" d="m -231.59524,-461.67912 c 0,0 48.65167,478.48261 445.71429,514.28572 359.94284,32.45602 640.22018,-446.37284 982.85715,-331.42857 262.0148,87.89795 626.8984,1278.90087 1188.5713,1211.42853 532.557,-63.9747 822.8573,-1382.85711 822.8573,-1382.85711 z"></path>
+		</svg>
+	</div>
+	<div class="liquid-menu-gooey">
+		<div class="gooey-animations"></div>
+	</div>
+	<div class="nav-container">
+		<ul>
+		  <li><a data-nav="home" class="nav-link split" href="#">Home</a></li>
+		   <li><a data-nav="rooms" class="nav-link split" href="#">About Us</a></li>
+			<li><a  data-nav="offers" class="nav-link split" href="#">Services</a></li>
+			 <li><a data-nav="dining" class="nav-link split" href="#">What we do</a></li>
+			  <li><a data-nav="weddings" class="nav-link split" href="#">Clients</a></li>
+			  <li><a  data-nav="events" class="nav-link split" href="#">Events</a></li>
+		
+			   <li><a data-nav="location" class="nav-link split" href="#">Location</a></li>
+				<li><a data-nav="about us" class="nav-link split" href="#">Contact Us</a></li>
+		</ul>
+		
+		
+		</div>
+</div>
+
+<section>
+  <button class="button">
+	Click me
+	<span class="button-container">
+		<span class="circle left"></span>
+		<span class="button-bg"></span>
+		<span class="circle right"></span>
+	</span>
+</button>
+</section>
+
+<!-- <footer>
+	<div class="gooey-animations"></div>
+	<h1></h1>
+  </footer> -->
+
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<defs>
+	  <filter id="goo">
+		<feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+		<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -7" result="goo" />
+		<feBlend in="SourceGraphic" in2="goo" />
+		</filter>
+	</defs>
+  </svg>
+  
+  
+  <svg viewbox="0 0 1440 328" width="100vw">
+	  <defs>
+		  <clipPath id="wave" clipPathUnits="objectBoundingBox" transform="scale(0.00069444444, 0.00304878048)">
+			  <path d="M504.452 27.7002C163.193 -42.9551 25.9595 38.071 0 87.4161V328H1440V27.7002C1270.34 57.14 845.711 98.3556 504.452 27.7002Z"/>
+		  </clipPath>
+	  </defs>
+  </svg>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="  crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script>
+
+  </script>
+  </body>
+  </html>
